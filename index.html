@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HOTLINE 2:07</title>
+  <style>
+    body { margin:0; background:#0b0b0f; color:#eee; font-family: system-ui; }
+    #game { width:100vw; height:100vh; display:flex; align-items:center; justify-content:center; }
+    .box { width:min(520px, 92vw); padding:16px; }
+    .prompt { font-size:18px; line-height:1.35; margin-bottom:14px; white-space:pre-wrap; }
+    .row { display:flex; gap:12px; }
+    button { flex:1; padding:14px 12px; border-radius:12px; border:1px solid #5b5b8a; background:#202036; color:#fff; font-size:14px; }
+    .stats { margin-top:14px; font-size:13px; opacity:0.9; white-space:pre-wrap; }
+    .tag { display:inline-block; font-size:12px; opacity:0.8; margin-bottom:10px; }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <div class="box">
+      <div class="tag" id="meta"></div>
+      <div class="prompt" id="prompt"></div>
+      <div class="row">
+        <button id="leftBtn">LEFT</button>
+        <button id="rightBtn">RIGHT</button>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
